@@ -1,8 +1,19 @@
-<div class="text-layout">
+<app-menu></app-menu>
+<router-outlet></router-outlet>
+
+<!-- <div class="text-layout">
     <h1>{{nombre | uppercase}}</h1>
 </div>
 
-
-<button pButton 
+<button pButton type="button" 
+    icon="pi pi-bell"
+    iconPos="right"
+    label="Mostrar nombre" 
+    class="p-button-help"
     (click)="cambiarNombre()">
-    Mostrar nombre</button>
+</button>
+
+<p-card [header]="nombre | titlecase"
+        subheader="Esto es un subheader">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corrupti facilis molestias, porro quis a dolores laboriosam totam omnis. Explicabo harum commodi fugit iusto natus omnis aut quo, voluptatem laborum.
+</p-card> -->
