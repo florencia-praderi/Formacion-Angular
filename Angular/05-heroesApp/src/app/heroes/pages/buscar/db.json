@@ -169,12 +169,21 @@
     },
     {
       "superhero": "Robin",
-      "alter_ego": "Ricardo Tapia",
+      "alter_ego": "",
       "characters": "",
-      "first_appearance": "En el primer comic",
+      "first_appearance": "",
       "publisher": "DC Comics",
-      "alt_img": "https://www.akiracomics.com/imagenes/poridentidad?identidad=b80a0c75-0096-4d4f-9172-0c19b2c8a634&ancho=850&alto=",
-      "id": "rg-GKjp"
+      "alt_img": "",
+      "id": "tMdY-NB"
+    },
+    {
+      "superhero": "Robin",
+      "alter_ego": "Roberto Tapia",
+      "characters": "Robin",
+      "first_appearance": "Primer comic",
+      "publisher": "DC Comics",
+      "alt_img": "",
+      "id": "gJJiMGX"
     }
   ]
 }

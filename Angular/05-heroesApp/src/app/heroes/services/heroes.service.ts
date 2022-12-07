@@ -25,4 +25,15 @@ export class HeroesService {
     return this.http.get<Heroes[]>(`${this.baseUrl}/heroes?q=${termino}&_limit=5`)
   }
 
+  agregarHeroe(heroe: Heroes): Observable <Heroes>{
+    return this.http.post<Heroes>(`${this.baseUrl}/heroes`, heroe)
+  }
+
+  actualizarHeroe(heroe: Heroes): Observable <Heroes>{
+    return this.http.put<Heroes>(`${this.baseUrl}/heroes/${heroe.id}`, heroe)
+  }
+
+  borrarHeroe(id: string): Observable <any>{
+    return this.http.delete<any>(`${this.baseUrl}/heroes/${id}`)
+  }
 }
