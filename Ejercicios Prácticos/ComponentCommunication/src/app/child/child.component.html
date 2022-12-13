@@ -1,0 +1,23 @@
+<div class="container mb-3 border border-2 border-primary">
+        <h4>CHILD</h4>
+        <div class="text-center">
+                <p>message: {{childMsg | uppercase}}</p>
+                <div class="btn-group col p-5" 
+                        role="group" 
+                        aria-label="Basic example">
+                <button type="button" 
+                        class="btn btn-primary m-2"
+                        (click)="service()">
+                        Use Service
+                </button>
+                <button type="button" 
+                        class="btn btn-primary m-2"
+                        (click)="output()">
+                        Use Output Event
+                </button>
+                <button type="button" 
+                        class="btn btn-primary m-2">
+                        Use Observable
+                </button>
+        </div>
+</div>
