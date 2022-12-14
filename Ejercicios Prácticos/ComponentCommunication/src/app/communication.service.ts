@@ -22,4 +22,13 @@ export class CommunicationService {
   msgFromServiceToChild(msg: string){
     this._msgChild.next(msg)
   }
+
+  //Observable
+  msgObservableToParent(){
+    return this._msgParent.next('parent using subject')
+  }
+
+  msgObservableToChild(){
+    return this._msgChild.next('child using subject')
+  }
 }

@@ -27,4 +27,8 @@ export class ChildComponent implements OnInit {
     this.outputFromChild.emit('child using output event')
   }
 
+  observable(){
+    this.communicationService.msgObservableToChild()
+  }
+
 }

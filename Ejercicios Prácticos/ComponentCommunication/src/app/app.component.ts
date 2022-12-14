@@ -20,20 +20,19 @@ export class AppComponent {
   }
 
   input(){
-    console.log('Parent using Input property')
     this.childMsg = 'Parent using Input Property'
   }
 
   output(msg: string){
-    console.log('Child using Output event')
     this.parentMsg = msg;
   }
 
   service(){
-    console.log('parent using service')
     this.communicationService.msgFromServiceToParent('parent using service')
   }
 
-
+  observable(){
+    this.communicationService.msgObservableToParent()
+  }
 
 }
