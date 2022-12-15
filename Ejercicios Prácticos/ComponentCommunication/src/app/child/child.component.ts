@@ -11,9 +11,9 @@ export class ChildComponent implements OnInit {
   @Output() outputFromChild: EventEmitter<string> = new EventEmitter();
 
   constructor(private communicationService: CommunicationService) { 
-    communicationService.messageParent$.subscribe(
-      (msg)=>(this.childMsg = msg)
-    );
+    this.communicationService.getMsgParent().subscribe(
+      (msg)=>{this.childMsg = msg}
+    )
   }
 
   ngOnInit(): void {

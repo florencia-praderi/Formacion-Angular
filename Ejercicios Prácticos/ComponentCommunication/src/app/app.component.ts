@@ -14,9 +14,9 @@ export class AppComponent {
   title = 'ComponentCommunication';
 
   constructor(public communicationService: CommunicationService){
-    this.communicationService.messageChild$.subscribe(
-      (msg)=> (this.parentMsg = msg)
-    );
+    this.communicationService.getMsgChild().subscribe(
+      (msg)=>{this.parentMsg = msg}
+    )
   }
 
   input(){
