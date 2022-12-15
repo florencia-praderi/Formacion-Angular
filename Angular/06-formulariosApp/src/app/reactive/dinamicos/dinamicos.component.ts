@@ -44,4 +44,7 @@ export class DinamicosComponent {
     console.log(this.miFormulario.value)
   }
 
+  eliminar(i: number){
+    this.favoritosArr.removeAt(i)
+  }
 }
