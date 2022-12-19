@@ -1,0 +1,33 @@
+<div class="container">
+    <h1>Buscador de Universidades</h1>
+    <div class="btn-group" role="group" aria-label="Basic example">
+    <button class="btn btn-success">
+        España
+    </button>
+    <button class="btn btn-primary">
+        Reino Unido
+    </button>
+    <button class="btn btn-primary">
+        Portugal
+    </button>
+    <form>
+        <input class="form-control me-2" 
+                type="search" 
+                placeholder="Buscar..." 
+                aria-label="Search">
+    </form>
+
+    </div>
+    <div class="col">
+        <div class="row">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"
+                    *ngFor="let universidad of universidades">
+                    {{universidad.nombre}}
+            </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+

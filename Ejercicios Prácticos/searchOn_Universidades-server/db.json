@@ -1,0 +1,191 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "usuario": "John Doe",
+      "email": "john.due@gmail.com"
+    }
+  ],
+  "universidades": [
+    {
+      "nombre": "Universidad Alfonso X El Sabio",
+      "ciudad": "Madrid",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universidad de Alcalá",
+      "ciudad": "Madrid",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universidad Antonio de Nebrija",
+      "ciudad": "Madrid",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universidad Autónoma de Madrid",
+      "ciudad": "Madrid",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universidad Complutense de Madrid",
+      "ciudad": "Madrid",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universidad Europea de Madrid",
+      "ciudad": "Madrid",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universidad Politécnica de Madrid",
+      "ciudad": "Madrid",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universidad San Pablo C.E.U.",
+      "ciudad": "Madrid",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universidad de Alicante",
+      "ciudad": "Valencia",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universidad Politécnica de Valéncia",
+      "ciudad": "Valencia",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universitat de València",
+      "ciudad": "Valencia",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universidad Católica de Valencia S. Vicente M.",
+      "ciudad": "Valencia",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universidad Autónoma de Barcelona",
+      "ciudad": "Cataluña",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universidad de Barcelona",
+      "ciudad": "Cataluña",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universidad Pompeu Fabra",
+      "ciudad": "Cataluña",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universidad Internacional de Cataluña",
+      "ciudad": "Cataluña",
+      "pais": "España",
+      "codigo_pais": "ES"
+    },
+    {
+      "nombre": "Universidad de Cambridge",
+      "ciudad": "Londres",
+      "pais": "Reino Unido",
+      "codigo_pais": "GB"
+    },
+    {
+      "nombre": "Imperial College London",
+      "ciudad": "Londres",
+      "pais": "Reino Unido",
+      "codigo_pais": "GB"
+    },
+    {
+      "nombre": "Loughborough University",
+      "ciudad": "Londres",
+      "pais": "Reino Unido",
+      "codigo_pais": "GB"
+    },
+    {
+      "nombre": "London School of Economics",
+      "ciudad": "Londres",
+      "pais": "Reino Unido",
+      "codigo_pais": "GB"
+    },
+    {
+      "nombre": "University of St. Andrews",
+      "ciudad": "Londres",
+      "pais": "Reino Unido",
+      "codigo_pais": "GB"
+    },
+    {
+      "nombre": "Lancaster University",
+      "ciudad": "Oxford",
+      "pais": "Reino Unido",
+      "codigo_pais": "GB"
+    },
+    {
+      "nombre": "University of Oxford",
+      "ciudad": "Oxford",
+      "pais": "Reino Unido",
+      "codigo_pais": "GB"
+    },
+    {
+      "nombre": "Universidad de Lisboa",
+      "ciudad": "Lisboa",
+      "pais": "Portugal",
+      "codigo_pais": "PT"
+    },
+    {
+      "nombre": "Universidad Técnica de Lisboa",
+      "ciudad": "Lisboa",
+      "pais": "Portugal",
+      "codigo_pais": "PT"
+    },
+    {
+      "nombre": "Universidad Nueva de Lisboa",
+      "ciudad": "Lisboa",
+      "pais": "Portugal",
+      "codigo_pais": "PT"
+    },
+    {
+      "nombre": "Universidad de Oporto",
+      "ciudad": "Oporto",
+      "pais": "Portugal",
+      "codigo_pais": "PT"
+    },
+    {
+      "nombre": "Universidad de Universidad de Minho",
+      "ciudad": "Oporto",
+      "pais": "Portugal",
+      "codigo_pais": "PT"
+    },
+    {
+      "nombre": "Universidade de Beira Interior",
+      "ciudad": "Oporto",
+      "pais": "Portugal",
+      "codigo_pais": "PT"
+    },
+    {
+      "nombre": "Universidad de Algarve",
+      "ciudad": "Oporto",
+      "pais": "Portugal",
+      "codigo_pais": "PT"
+    }
+  ]
+}
