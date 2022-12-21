@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { catchError, Observable, of, pipe } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { Universidad } from '../interfaces/universidades.interface';
+import { Universidad, CodigoPais } from '../interfaces/universidades.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +13,18 @@ export class SearchService {
 
   constructor(private http: HttpClient) { }
 
-  getUniversidades(): Observable<Universidad[]>{
-    return this.http.get<Universidad[]>(`${this.baseUrl}/universidades`)
+  getUniversidades(): 
+    Observable<Universidad[]>{
+      return this.http.get<Universidad[]>(`${this.baseUrl}/universidades`)
+  }
+
+  // getUniversidadesPorPais(codigoPais: string):
+  //   Observable<Universidad[]>{
+  //     return this.http.get<Universidad[]>
+  //       (`${this.baseUrl}/universidades?codigo_pais=${codigoPais}`)
+  // }
+  
+  getSugerenciasPorPais(termino: string, paisSeleccionado: string): Observable<Universidad[]>{
+    return this.http.get<Universidad[]>(`${this.baseUrl}/universidades/?q=${termino}&pais=${paisSeleccionado}`)
   }
 }
