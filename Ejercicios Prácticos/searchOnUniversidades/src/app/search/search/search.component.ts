@@ -34,8 +34,7 @@ export class SearchComponent implements OnInit {
   buscar(){
     this.searchService.getSugerenciasPorPais(this.termino, this.paisSeleccionado)
       .subscribe(
-      (universidades)=> {
-        this.universidades = universidades}
+      (universidades)=> {this.universidades = universidades}
         )
     }
 
