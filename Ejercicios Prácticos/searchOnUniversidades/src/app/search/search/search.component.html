@@ -1,7 +1,8 @@
 <div class="container">
     <h1>Buscador de Universidades</h1>
     <div class="btn-group" role="group" aria-label="Basic example">
-    <button class="btn btn-primary {{pais.nombre == paisSeleccionado && 'active btn-success'}}"
+    <button class="btn btn-primary {{
+                pais.nombre == paisSeleccionado && 'active btn-success'}}"
             type="button"
             *ngFor="let pais of paises"
             (click)="seleccionarPais(pais)">

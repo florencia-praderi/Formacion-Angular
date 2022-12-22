@@ -1,0 +1,17 @@
+.message{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: khaki;
+    border-radius: 5px;
+    color: darkblue;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    width: fit-content;
+}
+img{
+    width: 80px;
+}
