@@ -1,4 +1,13 @@
 <h3 class="text-decoration-underline">Controlador</h3>
+<form action="">
+    <label for="">
+        {{activeColor}}
+    </label>
+    <select class="form-select" aria-label="Default select example">
+        <option selected></option>
+        <option value="{{activeColor}}">{{activeColor}}</option>
+    </select>
+</form>
 
 <div class="form-check">
     <input class="form-check-input" 
@@ -6,7 +15,8 @@
             id="flexCheckChecked" 
             checked>
     <label class="form-check-label" 
-            for="flexCheckChecked">
-        Encendido / Apagado
+            for="flexCheckChecked"
+            (change)="switchLight()">
+            {{switchBoolean ? 'Encendido' : 'Apagado'}}
     </label>
 </div>

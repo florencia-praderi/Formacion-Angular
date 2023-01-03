@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { TrafficService } from '../traffic.service';
 
 @Component({
   selector: 'app-traffic-light',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styles: [`
   .semaforo{
     background-color: black;
+    width: fit-content;
   }
   .luz{
     background-color: grey;
@@ -25,11 +27,21 @@ import { Component, OnInit } from '@angular/core';
   }
   `]
 })
-export class TrafficLightComponent implements OnInit {
+export class TrafficLightComponent  {
 
-  constructor() { }
+  iterations: number = 0;
+  activeColor!: string;
+
+  constructor(private trafficService: TrafficService) { }
 
   ngOnInit(): void {
+    this.trafficService.$turnLightColors.subscribe({
+      next: (color)=> this.activeColor = color
+    })
   }
 
+  switchLight($event: any){
+    this.trafficService.turnOnOff($event)
+  }
+  
 }
