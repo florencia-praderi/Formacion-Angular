@@ -8,32 +8,28 @@ export class TrafficService {
 
   constructor() { }
 
-  colors: string[] = ['rojo', 'amarillo', 'verde'];
+  colors: string[] = ['rojo', 'amarillo', 'verde', ''];
   iterations: number = 0;
-  $turnLightColors = new Subject<string>();
-  timer: any
+  timer: any  
+  $lightColor = new Subject<string | null>();
+  $switcherValue = new Subject<boolean>();
+
   
   turnOnOff(on: boolean){
-    if(on){
+    if(!!on){
       this.timer = setInterval(()=>{
-        this.$turnLightColors.next(this.colors[this.iterations])
+        this.$lightColor.next(this.colors[this.iterations])
         this.iterations++
-        if(this.iterations==3){
+        if(this.iterations===4){
           this.iterations = 0;
+          this.$switcherValue.next(false)
           clearInterval(this.timer)
         }
-      }, 2000)
+      }, 1500)
     }
     else{
+      this.$switcherValue.next(false)
       clearInterval(this.timer)
     }
   }
-
-  turnOn(){
-    if(this.iterations ==2){
-      clearInterval(this.timer)
-    }
-    console.log(this.iterations)
-  }
-
 }

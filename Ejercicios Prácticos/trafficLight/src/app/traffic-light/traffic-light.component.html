@@ -2,13 +2,13 @@
     <div class="col">
         <div class="row">
             <div class="col-1 semaforo">
-                <div class="row luz {{activeColor == 'rojo' ? 'rojo' : ''}}"></div>
-                <div class="row luz {{activeColor == 'amarillo' ? 'amarillo' : ''}}"></div>
-                <div class="row luz {{activeColor == 'verde' ? 'verde' : ''}}"></div>
+                <div class="row luz {{activeColor === 'rojo' ? 'rojo' : ''}}"></div>
+                <div class="row luz {{activeColor === 'amarillo' ? 'amarillo' : ''}}"></div>
+                <div class="row luz {{activeColor === 'verde' ? 'verde' : ''}}"></div>
             </div>
         </div>
     </div>
     <br>
-    <app-controller ></app-controller>
+    <app-controller (turnOnLight)="controllerSwitch($event)"></app-controller>
 </div>
 

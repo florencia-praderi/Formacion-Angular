@@ -1,0 +1,26 @@
+<h3 class="text-decoration-underline">Controlador</h3>
+<div class="row">
+    <div class="col">
+        <select class="form-select">
+            <option value="{{activeColor}}">
+            {{activeColor | titlecase}}
+            </option>
+        </select>
+    </div>
+    <div class="col">
+        <div class="row">
+            <div class="form-check">
+        <input  type="checkbox" 
+                (change)="onOff()"
+                [checked]="switcherValue">
+                <span>
+                    {{!!switcherValue ? 'Encendido' : 'Apagado'}}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

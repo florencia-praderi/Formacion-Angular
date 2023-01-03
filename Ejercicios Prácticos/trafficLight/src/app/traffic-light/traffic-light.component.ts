@@ -16,13 +16,13 @@ import { TrafficService } from '../traffic.service';
     padding: 30px;
     justify-content: center;
   }
-  .luz-roja{
+  .rojo{
     background-color: red;
   }
-  .luz-amarilla{
+  .amarillo{
     background-color: yellow;
   }
-  .luz-verde{
+  .verde{
     background-color: green;
   }
   `]
@@ -30,18 +30,18 @@ import { TrafficService } from '../traffic.service';
 export class TrafficLightComponent  {
 
   iterations: number = 0;
-  activeColor!: string;
+  activeColor: string | null = '';
 
   constructor(private trafficService: TrafficService) { }
 
   ngOnInit(): void {
-    this.trafficService.$turnLightColors.subscribe({
+    this.trafficService.$lightColor.subscribe({
       next: (color)=> this.activeColor = color
     })
   }
 
-  switchLight($event: any){
-    this.trafficService.turnOnOff($event)
+  controllerSwitch(value: any){
+    this.trafficService.turnOnOff(value)
   }
   
 }
