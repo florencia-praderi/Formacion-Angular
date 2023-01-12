@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormControl } from '@angular/forms';
-import { Router } from '@angular/router';
 import { User } from '../interfaces/users.interface';
 import { CrudService } from '../services/crud.service';
 
@@ -71,6 +70,7 @@ export class FormularioComponent implements OnInit {
       })
       } else{
         //Editar (petición put)
+
     this.crudService
       .putUser(this.miFormulario.value)
       .subscribe({
