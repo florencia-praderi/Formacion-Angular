@@ -64,13 +64,13 @@
       "id": 8
     },
     {
-      "username": "Fiona Ru",
+      "username": "Juana Virtes",
       "password": "kansas",
       "confirmPassword": "kansas",
-      "email": "fir@gmail.com",
+      "email": "jvi@gmail.com",
       "suscript": true,
-      "country": "France",
-      "city": "Paris",
+      "country": "Chile",
+      "city": "Santiago",
       "id": 9
     }
   ],
